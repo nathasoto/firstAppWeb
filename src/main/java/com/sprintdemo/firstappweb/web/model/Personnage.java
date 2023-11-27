@@ -1,10 +1,18 @@
 package com.sprintdemo.firstappweb.web.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class Personnage {
 
+
+    @NotBlank
     private int id;
+    @NotNull
     private String nom;
+    @NotNull
     private String type;
+    @NotBlank
     private int pointDeVie;
 
     public Personnage() {
